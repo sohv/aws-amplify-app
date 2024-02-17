@@ -19,9 +19,8 @@ import {
   deleteNote as deleteNoteMutation,
 } from "./graphql/mutations";
 
-// From ChatGPT:
 import { Amplify } from 'aws-amplify';
-import awsExports from './aws-exports'; // The path may vary
+import awsExports from './aws-exports';
 import { generateClient } from 'aws-amplify/api';
 
 Amplify.configure(awsExports);
