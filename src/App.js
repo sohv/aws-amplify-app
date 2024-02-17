@@ -19,14 +19,9 @@ import {
   deleteNote as deleteNoteMutation,
 } from "./graphql/mutations";
 
-import { Amplify } from 'aws-amplify';
-import awsExports from './aws-exports';
 import { generateClient } from 'aws-amplify/api';
 
-Amplify.configure(awsExports);
-
 const client = generateClient();
-
 const App = ({ signOut }) => {
   const [notes, setNotes] = useState([]);
 
